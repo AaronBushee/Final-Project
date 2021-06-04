@@ -14,7 +14,7 @@ public class Main
     JPanel panel1 = new JPanel(new GridLayout(2,2, 20,20));
 
       //--------------------Label 1---------------------
-      JLabel label1 = new JLabel("aaaaaa");
+      JLabel label1 = new JLabel("Welcome to Adventure Selector! Let's get Started!");
       JTextField textfield1 = new JTextField(10);
 
       //-------------------------Button 1------------------------
@@ -24,19 +24,19 @@ public class Main
       {
           public void actionPerformed (ActionEvent e)
           {
-            String[] phrases = {"Behold! The Copy and Past-inator!", "Behold! The Hot Dog Vendor Revenge-inator!", "Behold! The Blow-Itself-Up-inator!", "Behold! The Multi-Helio-Tactical-Baboon-Glom-inator!"};
+            String[] phrases = {""};
               String newText = phrases[(int)(Math.random() * phrases.length)];
               label1.setText(newText);
           }
       });
-      
+
       //-----------------------Button 2--------------------------
-      JButton button2 = new JButton ("Well, what do you think?");
+      JButton button2 = new JButton ("");
       button2.addActionListener(new ActionListener()
       {
         public void actionPerformed(ActionEvent e)
         {
-            System.out.println("Perry the Platypus!?");
+            System.out.println("");
         }
       });
       
@@ -46,7 +46,7 @@ public class Main
       panel1.add(label1);
       panel1.add(textfield1);
 
-
+      frame1.setVisible(true);
 
   }//end main method
 }//end class Main
